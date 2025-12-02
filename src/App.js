@@ -6,14 +6,15 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>Testing Github Actions And Bitbucket Pipelines With React</h1>
+        <h1>Testing Github Actions with React - Test1</h1>
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          React
+          Phase 2, use webpack
         </a>
       </header>
     </div>
