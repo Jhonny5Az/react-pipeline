@@ -13,7 +13,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          React React react lsamdlñasmdlmasdml
+          React React Ricardo Llontop
           Phase 2, use webpack
         </a>
       </header>
