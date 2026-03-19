@@ -4,7 +4,6 @@ name: s3-test1
 
 # Controls when the workflow will run
 on:
-  workflow_dispatch:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
     branches: [ main,develop ]
@@ -34,21 +33,3 @@ jobs:
         
       - name: Deploy app build to S3 bucket
         run: aws s3 sync ./build/ s3://${{ secrets.S3_BUCKET }} --delete
-
-  tokenbuild:
-        runs-on: ubuntu-latest
-        steps:
-        - name: Install Cowsay Program
-          run: sudo apt-get install cowsay -y
-
-        - name: Generate ASCII Artwork
-          run: cowsay -f dragon "Run for cover, I am a DRAGON ... RAWR" >> dragon.txt
-        
-        - name: Sleep for 30 seconds
-          run: sleep 30
-
-        - name: Upload Dragon file
-          uses: actions/upload-artifact@v4
-          with:
-            name: dragon-artifact
-            path: dragon.txt 
