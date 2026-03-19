@@ -1,3 +1,5 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+v:1.0.0.1, 22/08/2025 ID perosn a, appoval, US, COMINTS
